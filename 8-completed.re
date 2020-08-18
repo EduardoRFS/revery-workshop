@@ -38,8 +38,8 @@ module Constants = {
   let speedF = 100.;
 
   /* width (int) - the width of our 'game surface' */
-  let width = 800;
-  let height = 600;
+  let width = 360;
+  let height = 568;
 
   let birdX = 50;
   let pipeGap = 200;
@@ -107,7 +107,7 @@ let sky = () => {
   </Positioned>;
 };
 
-let fontRoboto = Font.Family.system("Roboto-Regular.ttf");
+let fontRoboto = Font.Family.system("Arial");
 let textStyle = Style.[color(Colors.white)];
 
 module State = {
@@ -345,4 +345,6 @@ let%component world = () => {
   </Center>;
 };
 
+Timber.App.enable();
+Timber.App.setLevel(Timber.Level.perf);
 Playground.render(<world />);
