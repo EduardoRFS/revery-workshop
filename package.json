@@ -9,7 +9,10 @@
   },
   "dependencies": {
     "@esy-ocaml/reason": "^3.6.0",
-    "revery": "revery-ui/revery#d5413de06b5f5b95065ce46e7621301db1c52300",
+    "revery": "revery-ui/revery#f83d2da7fd3673674c8facc7e0222a67476af026",
+    "@opam/dune-private-libs": "2.5.0",
+    "@opam/dune-configurator": "2.5.0",
+    "@opam/dune": "2.5.0",
     "ocaml": "~4.10",
     "@glennsl/timber": "^1.2.0"
   },
