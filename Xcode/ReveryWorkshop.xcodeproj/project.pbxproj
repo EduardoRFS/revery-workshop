@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A05D68C724EC198000BBDF2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A05D68C524EC198000BBDF2D /* Main.storyboard */; };
+		A05D68CA24EC198000BBDF2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A05D68C824EC198000BBDF2D /* LaunchScreen.storyboard */; };
+		A05D68DC24EC219700BBDF2D /* bird-02.png in Copy Files */ = {isa = PBXBuildFile; fileRef = A05D68D824EC219700BBDF2D /* bird-02.png */; };
+		A05D68DD24EC219700BBDF2D /* bird-04.png in Copy Files */ = {isa = PBXBuildFile; fileRef = A05D68D924EC219700BBDF2D /* bird-04.png */; };
+		A05D68DE24EC219700BBDF2D /* bird-01.png in Copy Files */ = {isa = PBXBuildFile; fileRef = A05D68DA24EC219700BBDF2D /* bird-01.png */; };
+		A05D68DF24EC219700BBDF2D /* bird-03.png in Copy Files */ = {isa = PBXBuildFile; fileRef = A05D68DB24EC219700BBDF2D /* bird-03.png */; };
+		A05D68EA24EC21AA00BBDF2D /* revery-icon.png in Copy Files */ = {isa = PBXBuildFile; fileRef = A05D68E024EC21AA00BBDF2D /* revery-icon.png */; };
+		A05D68EB24EC21AA00BBDF2D /* sky.png in Copy Files */ = {isa = PBXBuildFile; fileRef = A05D68E124EC21AA00BBDF2D /* sky.png */; };
+		A05D68EE24EC21AA00BBDF2D /* land.png in Copy Files */ = {isa = PBXBuildFile; fileRef = A05D68E424EC21AA00BBDF2D /* land.png */; };
+		A05D68F024EC21AA00BBDF2D /* PipeDown.png in Copy Files */ = {isa = PBXBuildFile; fileRef = A05D68E624EC21AA00BBDF2D /* PipeDown.png */; };
+		A05D68F224EC21AA00BBDF2D /* PipeUp.png in Copy Files */ = {isa = PBXBuildFile; fileRef = A05D68E824EC21AA00BBDF2D /* PipeUp.png */; };
+		A05D68F324EC21AA00BBDF2D /* Roboto-Regular.ttf in Copy Files */ = {isa = PBXBuildFile; fileRef = A05D68E924EC21AA00BBDF2D /* Roboto-Regular.ttf */; };
+		A05D68F624EC22AB00BBDF2D /* ReveryWorkshop in Resources */ = {isa = PBXBuildFile; fileRef = A05D68F524EC22AB00BBDF2D /* ReveryWorkshop */; };
+		A05D68F724EC22EF00BBDF2D /* libssl.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = A05D68E524EC21AA00BBDF2D /* libssl.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A05D68F824EC22F000BBDF2D /* libSDL2.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = A05D68E324EC21AA00BBDF2D /* libSDL2.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A05D68F924EC22F200BBDF2D /* libharfbuzz.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = A05D68E724EC21AA00BBDF2D /* libharfbuzz.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A05D68FA24EC22F400BBDF2D /* libcrypto.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = A05D68E224EC21AA00BBDF2D /* libcrypto.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A05D68F424EC21CA00BBDF2D /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				A05D68DE24EC219700BBDF2D /* bird-01.png in Copy Files */,
+				A05D68DF24EC219700BBDF2D /* bird-03.png in Copy Files */,
+				A05D68FA24EC22F400BBDF2D /* libcrypto.dylib in Copy Files */,
+				A05D68F924EC22F200BBDF2D /* libharfbuzz.dylib in Copy Files */,
+				A05D68F824EC22F000BBDF2D /* libSDL2.dylib in Copy Files */,
+				A05D68F224EC21AA00BBDF2D /* PipeUp.png in Copy Files */,
+				A05D68DC24EC219700BBDF2D /* bird-02.png in Copy Files */,
+				A05D68EA24EC21AA00BBDF2D /* revery-icon.png in Copy Files */,
+				A05D68F724EC22EF00BBDF2D /* libssl.dylib in Copy Files */,
+				A05D68EE24EC21AA00BBDF2D /* land.png in Copy Files */,
+				A05D68F024EC21AA00BBDF2D /* PipeDown.png in Copy Files */,
+				A05D68EB24EC21AA00BBDF2D /* sky.png in Copy Files */,
+				A05D68F324EC21AA00BBDF2D /* Roboto-Regular.ttf in Copy Files */,
+				A05D68DD24EC219700BBDF2D /* bird-04.png in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A05D68BC24EC198000BBDF2D /* ReveryWorkshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReveryWorkshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A05D68C624EC198000BBDF2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A05D68C924EC198000BBDF2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A05D68CB24EC198000BBDF2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A05D68D824EC219700BBDF2D /* bird-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bird-02.png"; sourceTree = SOURCE_ROOT; };
+		A05D68D924EC219700BBDF2D /* bird-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bird-04.png"; sourceTree = SOURCE_ROOT; };
+		A05D68DA24EC219700BBDF2D /* bird-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bird-01.png"; sourceTree = SOURCE_ROOT; };
+		A05D68DB24EC219700BBDF2D /* bird-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bird-03.png"; sourceTree = SOURCE_ROOT; };
+		A05D68E024EC21AA00BBDF2D /* revery-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "revery-icon.png"; sourceTree = SOURCE_ROOT; };
+		A05D68E124EC21AA00BBDF2D /* sky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sky.png; sourceTree = SOURCE_ROOT; };
+		A05D68E224EC21AA00BBDF2D /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcrypto.dylib; sourceTree = SOURCE_ROOT; };
+		A05D68E324EC21AA00BBDF2D /* libSDL2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libSDL2.dylib; sourceTree = SOURCE_ROOT; };
+		A05D68E424EC21AA00BBDF2D /* land.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = land.png; sourceTree = SOURCE_ROOT; };
+		A05D68E524EC21AA00BBDF2D /* libssl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libssl.dylib; sourceTree = SOURCE_ROOT; };
+		A05D68E624EC21AA00BBDF2D /* PipeDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PipeDown.png; sourceTree = SOURCE_ROOT; };
+		A05D68E724EC21AA00BBDF2D /* libharfbuzz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libharfbuzz.dylib; sourceTree = SOURCE_ROOT; };
+		A05D68E824EC21AA00BBDF2D /* PipeUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PipeUp.png; sourceTree = SOURCE_ROOT; };
+		A05D68E924EC21AA00BBDF2D /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+		A05D68F524EC22AB00BBDF2D /* ReveryWorkshop */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReveryWorkshop; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A05D68B924EC198000BBDF2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A05D68AD24EC197D00BBDF2D = {
+			isa = PBXGroup;
+			children = (
+				A05D68BE24EC198000BBDF2D /* ReveryWorkshop iOS */,
+				A05D68BD24EC198000BBDF2D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A05D68BD24EC198000BBDF2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A05D68BC24EC198000BBDF2D /* ReveryWorkshop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A05D68BE24EC198000BBDF2D /* ReveryWorkshop iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A05D68E424EC21AA00BBDF2D /* land.png */,
+				A05D68F524EC22AB00BBDF2D /* ReveryWorkshop */,
+				A05D68E224EC21AA00BBDF2D /* libcrypto.dylib */,
+				A05D68E724EC21AA00BBDF2D /* libharfbuzz.dylib */,
+				A05D68E324EC21AA00BBDF2D /* libSDL2.dylib */,
+				A05D68E524EC21AA00BBDF2D /* libssl.dylib */,
+				A05D68E624EC21AA00BBDF2D /* PipeDown.png */,
+				A05D68E824EC21AA00BBDF2D /* PipeUp.png */,
+				A05D68E024EC21AA00BBDF2D /* revery-icon.png */,
+				A05D68E924EC21AA00BBDF2D /* Roboto-Regular.ttf */,
+				A05D68E124EC21AA00BBDF2D /* sky.png */,
+				A05D68C524EC198000BBDF2D /* Main.storyboard */,
+				A05D68DA24EC219700BBDF2D /* bird-01.png */,
+				A05D68D824EC219700BBDF2D /* bird-02.png */,
+				A05D68DB24EC219700BBDF2D /* bird-03.png */,
+				A05D68D924EC219700BBDF2D /* bird-04.png */,
+				A05D68C824EC198000BBDF2D /* LaunchScreen.storyboard */,
+				A05D68CB24EC198000BBDF2D /* Info.plist */,
+			);
+			path = "ReveryWorkshop iOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A05D68BB24EC198000BBDF2D /* ReveryWorkshop iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A05D68D324EC198000BBDF2D /* Build configuration list for PBXNativeTarget "ReveryWorkshop iOS" */;
+			buildPhases = (
+				A05D68B824EC198000BBDF2D /* Sources */,
+				A05D68B924EC198000BBDF2D /* Frameworks */,
+				A05D68BA24EC198000BBDF2D /* Resources */,
+				A05D68F424EC21CA00BBDF2D /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ReveryWorkshop iOS";
+			productName = "ReveryWorkshop iOS";
+			productReference = A05D68BC24EC198000BBDF2D /* ReveryWorkshop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A05D68AE24EC197D00BBDF2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Eduardo Rafael";
+				TargetAttributes = {
+					A05D68BB24EC198000BBDF2D = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = A05D68B124EC197D00BBDF2D /* Build configuration list for PBXProject "ReveryWorkshop" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A05D68AD24EC197D00BBDF2D;
+			productRefGroup = A05D68BD24EC198000BBDF2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A05D68BB24EC198000BBDF2D /* ReveryWorkshop iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A05D68BA24EC198000BBDF2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A05D68F624EC22AB00BBDF2D /* ReveryWorkshop in Resources */,
+				A05D68C724EC198000BBDF2D /* Main.storyboard in Resources */,
+				A05D68CA24EC198000BBDF2D /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A05D68B824EC198000BBDF2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A05D68C524EC198000BBDF2D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A05D68C624EC198000BBDF2D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A05D68C824EC198000BBDF2D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A05D68C924EC198000BBDF2D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A05D68D124EC198000BBDF2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		A05D68D224EC198000BBDF2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+			};
+			name = Release;
+		};
+		A05D68D424EC198000BBDF2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KAWHVWPZAL;
+				INFOPLIST_FILE = "ReveryWorkshop iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eduardorfs.ReveryWorkshop;
+				PRODUCT_NAME = ReveryWorkshop;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A05D68D524EC198000BBDF2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KAWHVWPZAL;
+				INFOPLIST_FILE = "ReveryWorkshop iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eduardorfs.ReveryWorkshop;
+				PRODUCT_NAME = ReveryWorkshop;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A05D68B124EC197D00BBDF2D /* Build configuration list for PBXProject "ReveryWorkshop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A05D68D124EC198000BBDF2D /* Debug */,
+				A05D68D224EC198000BBDF2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A05D68D324EC198000BBDF2D /* Build configuration list for PBXNativeTarget "ReveryWorkshop iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A05D68D424EC198000BBDF2D /* Debug */,
+				A05D68D524EC198000BBDF2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A05D68AE24EC197D00BBDF2D /* Project object */;
+}
