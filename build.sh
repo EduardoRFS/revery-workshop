@@ -11,7 +11,7 @@ TOOLCHAIN="${1:-ios.arm64}"
 SOURCE_BINARY_NAME="8-completed"
 BINARY_NAME="ReveryWorkshop"
 
-esy
+esy install
 node ../generate/dist/cli.js $TOOLCHAIN
 esy @$TOOLCHAIN
 
