@@ -11,11 +11,9 @@ TOOLCHAIN="${1:-ios.arm64}"
 SOURCE_BINARY_NAME="8-completed"
 BINARY_NAME="ReveryWorkshop"
 
-esy install
-node ../generate/dist/cli.js $TOOLCHAIN
+esy
+esy generate $TOOLCHAIN
 esy @$TOOLCHAIN
-
-echo "cd \$cur__root; dune build -x $TOOLCHAIN -p App || exit 0" | esy @$TOOLCHAIN not-esy-setup sh	
 	
 INSTALL_FOLDER=$(esy @$TOOLCHAIN sh -c 'echo $cur__target_dir/install/default.$ESY_TOOLCHAIN')
 	
