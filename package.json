@@ -9,10 +9,7 @@
   },
   "dependencies": {
     "@esy-ocaml/reason": "^3.6.0",
-    "revery": "EduardoRFS/revery#30da3fb4d7d6e0c6cf5315202063475a27cbdd88",
-    "@opam/dune-private-libs": "2.5.0",
-    "@opam/dune-configurator": "2.5.0",
-    "@opam/dune": "2.5.0",
+    "revery": "revery-ui/revery#bcae3578c08929451a0cb37b3008ce642ca7df47",
     "ocaml": "~4.10",
     "@glennsl/timber": "^1.2.0"
   },
@@ -21,6 +18,11 @@
     "run": "esy x 8-completed"
   },
   "devDependencies": {
-    "@opam/ocaml-lsp-server": "ocaml/ocaml-lsp:ocaml-lsp-server.opam"
+    "@opam/ocaml-lsp-server": "ocaml/ocaml-lsp:ocaml-lsp-server.opam",
+    "generate": "github:EduardoRFS/reason-mobile:generate.json#30bd5204c6c1806d5772aa80de2caa0597e743d5"
+  },
+  "resolutions": {
+    "@opam/lwt": "opam:5.3.0",
+    "reason-native-crash-utils": "EduardoRFS/reason-native-crash-utils#8d193f3d324a2bab710877e7ca5f4d7d9ff4e134"
   }
 }
