@@ -11,9 +11,11 @@ TOOLCHAIN="${1:-ios.arm64}"
 SOURCE_BINARY_NAME="8-completed"
 BINARY_NAME="ReveryWorkshop"
 
-esy
-esy generate $TOOLCHAIN
-esy @$TOOLCHAIN
+if [ ! -d "$TOOLCHAIN.esy.lock" ]; then
+  esy
+  esy generate $TOOLCHAIN
+  esy @$TOOLCHAIN
+fi
 	
 INSTALL_FOLDER=$(esy @$TOOLCHAIN sh -c 'echo $cur__target_dir/install/default.$ESY_TOOLCHAIN')
 	
@@ -29,15 +31,7 @@ copy_dylib () {
   install_name_tool -id @executable_path/$1.dylib $1.dylib
   install_name_tool -change $FROM @executable_path/$1.dylib $BINARY_NAME
 }
-patch_dylib () {
-  FROM="$(otool -L $1.dylib| grep $2 | awk '{print $1}')"  
-  install_name_tool -change $FROM @executable_path/$2.dylib $1.dylib
-}
 
-copy_dylib libcrypto
-copy_dylib libssl
-patch_dylib libssl libcrypto
-copy_dylib libharfbuzz
-# copy_dylib libSDL2
+copy_dylib libSDL2
 	
 cd ..
