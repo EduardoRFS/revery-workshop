@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@esy-ocaml/reason": "^3.6.0",
-    "revery": "EduardoRFS/revery#111fe8d8cd635c3d8fd0535b0cf0320d99789073",
+    "revery": "EduardoRFS/revery#5e2685f419ac88aad3d4d37932d62620c90b40d8",
     "ocaml": "~4.10"
   },
   "scripts": {
