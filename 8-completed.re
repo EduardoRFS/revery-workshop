@@ -345,6 +345,6 @@ let%component world = () => {
   </Center>;
 };
 
-Timber.App.enable();
+Timber.App.enable(Timber.Reporter.console());
 Timber.App.setLevel(Timber.Level.perf);
 Playground.render(<world />);

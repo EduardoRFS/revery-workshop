@@ -9,9 +9,8 @@
   },
   "dependencies": {
     "@esy-ocaml/reason": "^3.6.0",
-    "revery": "revery-ui/revery#bcae3578c08929451a0cb37b3008ce642ca7df47",
-    "ocaml": "~4.10",
-    "@glennsl/timber": "^1.2.0"
+    "revery": "EduardoRFS/revery#111fe8d8cd635c3d8fd0535b0cf0320d99789073",
+    "ocaml": "~4.10"
   },
   "scripts": {
     "format": "bash -c \"refmt --in-place *.re\"",

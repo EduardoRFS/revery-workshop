@@ -25,13 +25,4 @@ cd Xcode
 cp $INSTALL_FOLDER/bin/* .
 cp $SOURCE_BINARY_NAME $BINARY_NAME
 
-copy_dylib () {
-  FROM="$(otool -L $BINARY_NAME | grep $1 | awk '{print $1}')"
-  cp $FROM $1.dylib
-  install_name_tool -id @executable_path/$1.dylib $1.dylib
-  install_name_tool -change $FROM @executable_path/$1.dylib $BINARY_NAME
-}
-
-copy_dylib libSDL2
-	
 cd ..
