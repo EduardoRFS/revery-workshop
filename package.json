@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@esy-ocaml/reason": "^3.6.0",
-    "revery": "EduardoRFS/revery#5e2685f419ac88aad3d4d37932d62620c90b40d8",
+    "revery": "EduardoRFS/revery#111fe8d8cd635c3d8fd0535b0cf0320d99789073",
     "ocaml": "~4.10"
   },
   "scripts": {
@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@opam/ocaml-lsp-server": "ocaml/ocaml-lsp:ocaml-lsp-server.opam",
-    "generate": "github:EduardoRFS/reason-mobile:generate.json#c08a31f1b158a0994bb457c35a66aba6dc9e7a9c"
+    "generate": "github:EduardoRFS/reason-mobile:generate.json#5e2685f419ac88aad3d4d37932d62620c90b40d8"
   },
   "resolutions": {
     "@opam/lwt": "opam:5.3.0",
