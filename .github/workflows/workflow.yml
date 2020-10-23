@@ -1,0 +1,37 @@
+name: Revery Workshop
+
+on: [push, pull_request]
+
+jobs:
+  cross_compile:
+    name: Cross compile
+
+    strategy:
+      fail-fast: false
+      matrix:
+        target: [ios.arm64, ios.simulator.x86_64]
+
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - name: Install esy
+        run: npm install -g esy
+
+      - uses: esy/github-action@v1
+        with:
+          cache-key: ${{ matrix.target }}-${{ hashFiles('esy.lock/index.json') }}
+
+      - name: Create ${{ matrix.target }} wrapper
+        run: esy generate ${{ matrix.target }}
+
+      - name: Install ${{ matrix.target }} dependencies
+        run: esy @${{ matrix.target }} install
+
+      - name: Build ${{ matrix.target }}
+        run: esy @${{ matrix.target }} build
