@@ -22,6 +22,7 @@
   },
   "resolutions": {
     "@opam/lwt": "opam:5.3.0",
-    "reason-native-crash-utils": "EduardoRFS/reason-native-crash-utils#8d193f3d324a2bab710877e7ca5f4d7d9ff4e134"
+    "reason-native-crash-utils": "EduardoRFS/reason-native-crash-utils#8d193f3d324a2bab710877e7ca5f4d7d9ff4e134",
+    "esy-m4": "EduardoRFS/esy-m4#3849bb9e4e21f2bea1dc6cc6ea71b3b3d6e7f894"
   }
 }
