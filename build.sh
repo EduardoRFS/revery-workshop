@@ -13,9 +13,9 @@ BINARY_NAME="ReveryWorkshop"
 
 if [ ! -d "$TOOLCHAIN.esy.lock" ]; then
   esy
-  esy generate $TOOLCHAIN
-  esy @$TOOLCHAIN
+  esy generate $toolchain
 fi
+esy @$TOOLCHAIN
 	
 INSTALL_FOLDER=$(esy @$TOOLCHAIN sh -c 'echo $cur__target_dir/install/default.$ESY_TOOLCHAIN')
 	
