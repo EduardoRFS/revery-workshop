@@ -17,7 +17,8 @@
     "run": "esy x 8-completed"
   },
   "devDependencies": {
-    "@opam/ocaml-lsp-server": "ocaml/ocaml-lsp:ocaml-lsp-server.opam"
+    "@opam/ocaml-lsp-server": "ocaml/ocaml-lsp:ocaml-lsp-server.opam",
+    "generate": "github:EduardoRFS/reason-mobile:generate.json"
   },
   "resolutions": {
     "@opam/lwt": "opam:5.3.0",

@@ -27,20 +27,8 @@ jobs:
         if: matrix.system == 'ubuntu-latest'
         run: sudo apt install nasm
 
-      - name: Create esy wrapper
-        run: |
-          echo '{
-            "source": "./package.json",
-            "override": {
-              "dependencies": {
-                "reason-mobile": "github:EduardoRFS/reason-mobile:generate.json"
-              }
-            }
-          }' > generate.json
-
       - uses: EduardoRFS/github-action@8c8a899590cabc093e0430c9207f75d87562cc7b
         with:
-          manifest: ./generate.json
           cache-key: ${{ hashFiles('esy.lock/index.json') }}
 
   cross_compile:
@@ -70,23 +58,12 @@ jobs:
       - name: Install esy
         run: npm install -g esy
 
-      - uses: ilammy/setup-nasm@v1
-
-      - name: Create esy wrapper
-        run: |
-          echo '{
-            "source": "./package.json",
-            "override": {
-              "dependencies": {
-                "reason-mobile": "github:EduardoRFS/reason-mobile:generate.json"
-              }
-            }
-          }' > generate.json
+      - name: Install nasm
+        if: matrix.system == 'ubuntu-latest'
+        run: sudo apt install nasm
 
       - uses: EduardoRFS/github-action@8c8a899590cabc093e0430c9207f75d87562cc7b
         with:
-          working-directory: hello-reason
-          manifest: ./generate.json
           cache-key: ${{ hashFiles('esy.lock/index.json') }}
 
       - name: Generate wrapper
