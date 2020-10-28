@@ -3,35 +3,88 @@ name: Revery Workshop
 on: [push, pull_request]
 
 jobs:
-  cross_compile:
-    name: Cross compile
+  native:
+    name: Build for Native
 
     strategy:
-      fail-fast: false
       matrix:
-        target: [ios.arm64, ios.simulator.x86_64]
+        system: [ubuntu-latest, macos-latest]
 
-    runs-on: macos-latest
+    runs-on: ${{ matrix.system }}
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v2-beta
         with:
           node-version: 14
+
       - name: Install esy
         run: npm install -g esy
 
-      - uses: esy/github-action@v1
+      - name: Create esy wrapper
+        run: |
+          echo '{
+            "source": "./package.json",
+            "override": {
+              "dependencies": {
+                "reason-mobile": "github:EduardoRFS/reason-mobile:generate.json"
+              }
+            }
+          }' > generate.json
+
+      - uses: EduardoRFS/github-action@8c8a899590cabc093e0430c9207f75d87562cc7b
         with:
-          cache-key: ${{ matrix.target }}-${{ hashFiles('esy.lock/index.json') }}
+          manifest: ./generate.json
+          cache-key: ${{ hashFiles('esy.lock/index.json') }}
 
-      - name: Create ${{ matrix.target }} wrapper
-        run: esy generate ${{ matrix.target }}
+  cross_compile:
+    needs: native
+    strategy:
+      fail-fast: false
+      matrix:
+        system: [ubuntu, macos]
+        target: [android.arm64, android.x86_64, ios.arm64, ios.simulator.x86_64]
+        exclude:
+          - system: ubuntu
+            target: ios.arm64
+          - system: ubuntu
+            target: ios.simulator.x86_64
 
-      - name: Install ${{ matrix.target }} dependencies
-        run: esy @${{ matrix.target }} install
+    name: Build ${{ matrix.target }} on ${{ matrix.system }}
+    runs-on: ${{ matrix.system }}-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: 14
+
+      - name: Install esy
+        run: npm install -g esy
+
+      - name: Create esy wrapper
+        run: |
+          echo '{
+            "source": "./package.json",
+            "override": {
+              "dependencies": {
+                "reason-mobile": "github:EduardoRFS/reason-mobile:generate.json"
+              }
+            }
+          }' > generate.json
+
+      - uses: EduardoRFS/github-action@8c8a899590cabc093e0430c9207f75d87562cc7b
+        with:
+          working-directory: hello-reason
+          manifest: ./generate.json
+          cache-key: ${{ hashFiles('esy.lock/index.json') }}
+
+      - name: Generate wrapper
+        run: esy @generate generate ${{ matrix.target }}
 
       - name: Build ${{ matrix.target }}
         run: esy @${{ matrix.target }} build
