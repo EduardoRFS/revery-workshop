@@ -23,6 +23,8 @@ jobs:
       - name: Install esy
         run: npm install -g esy
 
+      - uses: ilammy/setup-nasm@v1
+
       - name: Create esy wrapper
         run: |
           echo '{
@@ -65,6 +67,8 @@ jobs:
 
       - name: Install esy
         run: npm install -g esy
+
+      - uses: ilammy/setup-nasm@v1
 
       - name: Create esy wrapper
         run: |
